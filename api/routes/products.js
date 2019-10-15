@@ -26,4 +26,10 @@ router.patch('/', (req, res, next) => {
     });
 });
 
+router.delete('/:id', (req, res, next) => {
+    res.status(200).json({
+        message: `DELETE request for product ${id}`
+    });
+});
+
 module.exports = router;
